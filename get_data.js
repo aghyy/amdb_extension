@@ -18,7 +18,7 @@ function movie() {
 	const hash = json.hash;
 	const expires = json.expires;
 	const url = `${baseUrl}?id_movie=${idMovie}&hash=${hash}&expires=${expires}`;
-	console.log(url);
+	window.open(url, '_blank');
 }
 
 function show() {
@@ -37,7 +37,7 @@ function show() {
 		const expires = json.expires;
 		
 		const url = `${baseUrl}?id_episode=${episodeId}&hash=${hash}&expires=${expires}`;
-		console.log(url);
+		window.open(url, '_blank');
 	  } else {
 	    console.log(`Episode ID not found for s${seasonNumber}-e${episodeNumber}`);
 	  }
