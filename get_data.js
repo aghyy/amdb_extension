@@ -57,6 +57,7 @@ div.style.display = "flex";
 div.style.justifyContent = "center";
 div.style.alignItems = "center";
 div.style.cursor = "pointer";
+div.style.zIndex = "9999999";
 
 const img = document.createElement("img");
 img.src = "https://raw.githubusercontent.com/aghyy/amdb_extension/main/amdb.png";
